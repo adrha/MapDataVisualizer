@@ -1,0 +1,46 @@
+@startuml
+entity "Training" as training {
+    * id : GUID
+    * name : text
+    startTime : DateTime
+    endTime : DateTime
+}
+
+entity "Soldier" as soldier {
+    * id : GUID
+    * name : text
+    * rank : enum int
+}
+
+entity "SoldierTrainingAssignment" as soldierTrainingAssignment {
+    * id : GUID
+    * soldierId : GUID <<FK>>
+    * trainingId : GUID <<FK>>
+}
+
+entity "Sensor" as sensor {
+    * id : GUID
+    * serialNumber : text
+}
+
+entity "SensorData" as sensorData {
+    * sensorId : GUID <<FK>>
+    * received : DateTime
+    * lat : double
+    * lon : double
+}
+
+entity "SensorSoldierAssignment" as sensorSoldierAssignment {
+    * id : GUID
+    * soldierId : GUID <<FK>>
+    * sensorId : GUID <<FK>>
+    * assignmentStart : DateTime
+    assignmentEnd : DateTime
+}
+
+training     ||--o{     soldierTrainingAssignment
+soldier      ||--o{     soldierTrainingAssignment
+soldier      ||--o{     sensorSoldierAssignment
+sensor       ||--o{     sensorSoldierAssignment
+sensor       ||--o{     sensorData
+@enduml

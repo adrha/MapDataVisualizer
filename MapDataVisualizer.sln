@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapDataVisualizer.App", "src\MapDataVisualizer.App\MapDataVisualizer.App.csproj", "{778CD1FB-9B9E-457B-A498-CF9FC86E5270}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A15568FB-F2B5-468D-BB7E-BFFF5E1F46D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{80585629-3C93-4DE0-BDA3-02D1E34D137C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapDataVisualizer.UnitTests", "test\MapDataVisualizer.UnitTests\MapDataVisualizer.UnitTests.csproj", "{CA4EBC43-5B86-45E4-8464-380B06D1C30B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapDataVisualizer.IntegrationTests", "test\MapDataVisualizer.IntegrationTests\MapDataVisualizer.IntegrationTests.csproj", "{E6EFFBF9-ABA1-49B7-BED3-FBF7769790B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{254E6480-3875-4B5D-9202-F77F9822DBF4}"
+	ProjectSection(SolutionItems) = preProject
+		doc\DB-ERD.puml = doc\DB-ERD.puml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{778CD1FB-9B9E-457B-A498-CF9FC86E5270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{778CD1FB-9B9E-457B-A498-CF9FC86E5270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{778CD1FB-9B9E-457B-A498-CF9FC86E5270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{778CD1FB-9B9E-457B-A498-CF9FC86E5270}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA4EBC43-5B86-45E4-8464-380B06D1C30B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA4EBC43-5B86-45E4-8464-380B06D1C30B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA4EBC43-5B86-45E4-8464-380B06D1C30B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA4EBC43-5B86-45E4-8464-380B06D1C30B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6EFFBF9-ABA1-49B7-BED3-FBF7769790B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6EFFBF9-ABA1-49B7-BED3-FBF7769790B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6EFFBF9-ABA1-49B7-BED3-FBF7769790B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6EFFBF9-ABA1-49B7-BED3-FBF7769790B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{778CD1FB-9B9E-457B-A498-CF9FC86E5270} = {80585629-3C93-4DE0-BDA3-02D1E34D137C}
+		{CA4EBC43-5B86-45E4-8464-380B06D1C30B} = {A15568FB-F2B5-468D-BB7E-BFFF5E1F46D5}
+		{E6EFFBF9-ABA1-49B7-BED3-FBF7769790B9} = {A15568FB-F2B5-468D-BB7E-BFFF5E1F46D5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50BB720E-B42C-492C-9918-BFD7DD97204D}
+	EndGlobalSection
+EndGlobal
