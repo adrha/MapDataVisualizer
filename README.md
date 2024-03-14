@@ -8,6 +8,15 @@
 - Add unit and integration tests for the movement of the soldier
 - Data should be fetched in via JSON-object
 
+## Approach
+The `Map Data Visualizer` is implemented with the dependency injection pattern.
+With an MSSQL-database as backbone of the application, the DB-schema is created and maintained with the `code first`-paradigm.  
+Data should be read and written over repositories, which implement interfaces, to have full flexibility for testing.  
+The UI should follow a proper MVVM-approach in order to decouple backend and frontend relevant code. Incoming position-data should be gathered, stored to the database and update it's dependent element on the map in a defined interval.  
+The position-update should be propagated via events through the viewmodel, to only update the relevant items.  
+To work with a first batch of data, a function ensures the seed of test-data during application startup.  
+NLog is configured to log messages and exceptions.
+
 ## Achieved results within 5hrs assessment-time
 ✅ ERD  
 ✅ WPF .NET-8 application with dependency injection set up    
